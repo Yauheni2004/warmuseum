@@ -1,0 +1,290 @@
+/*========= GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300&display=swap');
+
+/*========= VARIABLES CSS ==========*/
+:root {
+	/*========= Colors ==========*/
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-sand: #e8dfcf;
+	--color-dark: #030303;
+	--color-dark-red: #710707;
+	--сolor-red: #ff0000;
+
+	/*========= Font and typography ==========*/
+	--body-font: 'Roboto', sans-serif;
+	--title-font: 'Forum', cursive;
+
+	--header-font-size: 80px;
+	--header-responsive-font-size: 50px;
+	--header-responsive-2-font-size: 40px;
+	--big-font-size: 32px;
+	--medium-font-size: 28px;
+	--medium-responsive-font-size: 24px;
+	--normal-font-size: 22px;
+	--normal-responsive-font-size: 20px;
+	--small-font-size: 18px;
+	--responsive-small-font-size: 16px;
+}
+
+/*========= BASE ==========*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+	font-size: var(--header-font-size);
+	font-family: var(--title-font);
+	font-weight: 400;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	font-weight: 300;
+	color: var(--color-dark);
+	background-color: var(--color-sand);
+	height: 100%;
+	line-height: 1;
+}
+/*========= GENERAL CSS CLASSES ==========*/
+/*========= GENERAL CSS CLASSES ==========*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 240px;
+}
+
+._box {
+	padding-top: 70px;
+}
+
+/*========= HEADER==========*/
+.header {
+	width: 100%;
+}
+
+.header__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 150px;
+	background: url(../img/history/history_header.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header__title {
+	color: var(--color-white);
+	line-height: 112%;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+._row {
+	display: flex;
+	align-items: flex-start;
+}
+
+._image_box {
+	flex: 0 0 40%;
+}
+
+._image {
+	width: 100%;
+	object-fit: cover;
+	box-shadow: 5px 5px 5px var(--color-dark);
+}
+
+._content {
+	flex: 1 1 auto;
+	line-height: 175%;
+	padding-left: 30px;
+	color: var(--color-black);
+}
+
+._text:not(:last-of-type) {
+	margin-bottom: 25px;
+}
+
+/*========= MAIN ==========*/
+.main {
+	flex: 1 1 auto;
+}
+
+.third-hall {
+	margin-bottom: 50px;
+}
+
+/*========= MEDIA 1740px==========*/
+@media (max-width: 1740px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 180px;
+	}
+
+	._box {
+		padding-top: 64px;
+	}
+}
+
+/*========= MEDIA 1560px==========*/
+@media (max-width: 1560px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 136px;
+	}
+
+	._box {
+		padding-top: 58px;
+	}
+}
+
+/*========= MEDIA 1380px==========*/
+@media (max-width: 1380px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 92px;
+	}
+
+	._box {
+		padding-top: 52px;
+	}
+}
+
+/*========= MEDIA 1200px==========*/
+@media (max-width: 1200px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 48px;
+	}
+
+	._box {
+		padding-top: 46px;
+	}
+}
+
+/*========= MEDIA 1024px==========*/
+@media (max-width: 1024px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 20px;
+	}
+
+	._box {
+		padding-top: 40px;
+	}
+
+	.header__title {
+		font-size: var(--header-responsive-font-size);
+	}
+
+	._content {
+		font-size: var(--normal-responsive-font-size);
+		line-height: 150%;
+		padding-left: 15px;
+	}
+
+	._text:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+}
+
+/*========= MEDIA 768px==========*/
+@media (max-width: 768px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 20px;
+	}
+
+	._box {
+		padding-top: 30px;
+	}
+
+	._row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	._image_box {
+		padding: 0 100px;
+		margin-bottom: 20px;
+	}
+
+	.header__title {
+		font-size: var(--header-responsive-2-font-size);
+	}
+
+	._content {
+		font-size: var(--small-font-size);
+		line-height: 130%;
+		padding-left: 0px;
+	}
+
+	._text:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+}
+
+/*========= MEDIA 532px==========*/
+@media (max-width: 532px) {
+	/*========= GENERAL CSS CLASSES ==========*/
+	._container {
+		padding: 0 10px;
+	}
+
+	._box {
+		padding-top: 20px;
+	}
+
+	._image_box {
+		padding: 0 50px;
+		margin-bottom: 15px;
+	}
+
+	.header__title {
+		font-size: var(--medium-font-size);
+	}
+
+	._content {
+		font-size: var(--responsive-small-font-size);
+		line-height: 130%;
+	}
+
+	._text:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+}
